@@ -1,0 +1,101 @@
+   
+     /* FlexSlider Necessary Styles */ 
+     .flexslider .slides > li {display:none; -webkit-backface-visibility:hidden}
+     .flexslider .slides img {width:100%; display:block; }
+     .flex-pauseplay span {text-transform:capitalize}
+     .slides:after {content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0} 
+     html[xmlns] .slides {display:block} 
+     * html .slides {height:1%}
+     .no-js .slides > li:first-child {display:block}
+
+     /* FlexSlider Theme */
+     .flexslider {display:block; margin:0; clear:both; background:white; position:relative; z-index:1; zoom:1;}
+     .flex-viewport {m-webkit-transition:all 1s ease; -moz-transition:all 1s ease; transition:all 1s ease}
+     .flexslider .slides {zoom:1; width:100%; padding: 0; margin: 0;}
+
+     /* Control Nav */
+     .flex-control-nav { position:absolute; z-index:30; bottom:1.5em; right:1.5em}
+     .flex-control-nav li {margin:0 6px; display:inline-block; zoom:1; *display:inline}
+     .flex-control-paging li a {width:15px; height:15px; display:block; background:white; cursor:pointer; opacity:0.5; text-indent:-9999px; -webkit-border-radius:20px; border-radius:20px;}
+     .flex-control-paging li a:hover, .flex-control-paging li a.flex-active {opacity:1;}
+     .flex-control-paging li a.flex-active { cursor:default; }
+
+     /* Slide Elements */
+     .slides li {position:relative; z-index:10; width:100%; padding: 0; margin: 0;}
+     .slides li img {position:relative; z-index:10}
+
+     /* Slideshow Copy */
+     .slides li .copy {position:absolute; text-align:left; z-index:20; left:5%; top:25%; width:90%; display:block; text-align:center;}
+          .slides li .copy  { letter-spacing:-1px; color:white; text-transform:none; text-shadow:0px 1px 3px rgba(0, 0, 0, 0.75)}
+               .slides li .copy  strong {color:#b5b700}
+          .slides li .copy .btn {border:1px solid white; color:white;}
+               .slides li .copy .btn:hover {color:white; background:#3b61cc; border-color:#3b61cc;}
+          .scroll-down {position:absolute; z-index:40; bottom:10%; left:47%; left:calc(50% - 30px); height:60px; width:60px; display:inline-block; color:white; opacity:0.5;}  
+               .scroll-down:hover {opacity:1;color:white;}  
+     
+		
+	 		  	
+	 
+          @media all and (max-width:768px) {
+               .scroll-down {display:none}   
+	       
+	       .slides li .copy {margin: 0 !important;}
+	       
+	       
+          }
+          @media screen and (min-width:1025px) {
+               .slides li .copy p {font-size:70px;}
+			    .flex-viewport {height:100vh; max-height:100vh; height:calc(100vh - 100px);}
+
+
+          }
+          @media screen and (min-width:769px) and (max-width:1024px) {
+               .slides li .copy p {font-size:50px;}
+	       .slides li .copy {margin: 0 !important;}
+          }
+          @media screen and (max-width:768px){
+               .slides li .copy {top:15%;}             
+               .slides li .copy p {font-size:35px;}
+               .slides li .copy .btn {padding:0.4em 0.6em !important;}               
+               .flex-control-nav {bottom:1em; right:0.5em}
+	       .slides li .copy {margin: 0 !important;}
+          }
+          @media screen and (max-width:580px){
+               .slides li .copy p {font-size:30px;}
+	       .slides li .copy {margin: 0 !important;}
+          }
+          @media screen and (max-width:480px){
+               .slides li .copy p {font-size:20px; line-height:125%;}
+	       .slides li .copy {margin: 0 !important;}
+          }
+	  
+
+/* Buttons/Links */ 
+a {
+	text-decoration:none;
+	-webkit-transition:all 0.25s ease;
+	-moz-transition:all 0.25s ease;
+	-ms-transition:all 0.25s ease; 
+	-o-transition:all 0.25s ease; 
+	transition:all 0.25s ease
+}
+
+.btn {
+	font-size: 14px;
+	cursor:pointer; 
+	outline:none; 
+	padding:0.75em 1.25em!important; 
+	text-align:center; 
+	min-width:100px; 
+	text-transform:uppercase;
+	display:inline-block; 
+	text-align:center; 
+	-webkit-border-radius:5px; 
+	border-radius:5px; 
+}
+
+
+	@media screen and (max-width:768px) {
+		.btn {padding:0.5em 1em!important; min-width:50px; margin-right:8px;}     	
+	}
+	
